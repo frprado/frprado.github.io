@@ -151,14 +151,14 @@ Previously, I was a graduate student researcher at McMaster University specializ
 
 <div id="portfolio" class="tab-content" markdown="1">
 
-<div class="item-header">
+<!-- <div class="item-header">
   <h3><a href="https://github.com/frprado/spam-scraper">ScamWatch</a></h3>
 </div>
 <div class="stack">[<i class="fab fa-python"></i> Python, spaCy, Streamlit, GitHub Actions]</div>
 
 Reddit scraper + NLP pipeline + interactive dashboard for analysing r/Scams posts. Tracks scam types, money amounts, urgency language, scammer directives, victim actions, and geographic distribution. Automated daily scraping via GitHub Actions keeps the data fresh and triggers an automatic redeploy on Streamlit Community Cloud.
 
-<hr>
+<hr> -->
 
 <div class="item-header">
   <h3><a href="https://github.com/frprado/lingdash">LingDash</a></h3>
