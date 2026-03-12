@@ -1,0 +1,6 @@
+title: Frederico Prado
+description: Data Scientist
+remote_theme: riggraz/no-style-please
+
+plugins:
+  - jekyll-remote-theme

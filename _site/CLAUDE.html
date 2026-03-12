@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Portfolio Site Notes</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Portfolio Site Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Data Scientist" />
+<meta property="og:description" content="Data Scientist" />
+<link rel="canonical" href="http://localhost:4000/CLAUDE.html" />
+<meta property="og:url" content="http://localhost:4000/CLAUDE.html" />
+<meta property="og:site_name" content="Frederico Prado" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Portfolio Site Notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Data Scientist","headline":"Portfolio Site Notes","url":"http://localhost:4000/CLAUDE.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Frederico Prado" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.css" integrity="sha384-OH8qNTHoMMVNVcKdKewlipV4SErXqccxxlg6HC9Cwjr5oZu2AdBej1TndeCirael" crossorigin="anonymous">
+
+</head>
+<body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"></a><h1>Portfolio Site Notes</h1>
+
+<h1 id="portfolio-site-notes">Portfolio Site Notes</h1>
+
+<h2 id="deploying-dashboards">Deploying Dashboards</h2>
+
+<h3 id="scamwatch-spam-scraper--streamlit-community-cloud">ScamWatch (spam-scraper) → Streamlit Community Cloud</h3>
+<ul>
+  <li>Free, no credit card, requires public repo</li>
+  <li>Go to https://share.streamlit.io, sign in with GitHub</li>
+  <li>“New app” → select <code class="language-plaintext highlighter-rouge">frprado/spam-scraper</code> → main file: <code class="language-plaintext highlighter-rouge">dashboard.py</code></li>
+  <li>Gets a URL like <code class="language-plaintext highlighter-rouge">frprado-spam-scraper-dashboard-xxxx.streamlit.app</code></li>
+</ul>
+
+<h3 id="lingdash-lingdash--render-free-tier">LingDash (lingdash) → Render (free tier)</h3>
+<ul>
+  <li>Free, requires public repo; app sleeps after 15 min inactivity (~30s wake-up)</li>
+  <li>Alternative with no sleep: Hugging Face Spaces (also free)</li>
+  <li>Go to https://render.com, sign in with GitHub</li>
+  <li>“New” → “Web Service” → connect <code class="language-plaintext highlighter-rouge">frprado/lingdash</code></li>
+  <li>Build command: <code class="language-plaintext highlighter-rouge">pip install -r requirements.txt</code></li>
+  <li>Start command: <code class="language-plaintext highlighter-rouge">python pipeline/dashboard.py</code></li>
+  <li><strong>Required code change before deploying:</strong> the <code class="language-plaintext highlighter-rouge">app.run()</code> call must bind to <code class="language-plaintext highlighter-rouge">0.0.0.0</code> and read PORT from env:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s">"0.0.0.0"</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">environ</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">"PORT"</span><span class="p">,</span> <span class="mi">8050</span><span class="p">)))</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Gets a URL like <code class="language-plaintext highlighter-rouge">lingdash.onrender.com</code></li>
+</ul>
+
+<h3 id="after-deploying">After deploying</h3>
+<p>Add live demo links to the portfolio entries in <code class="language-plaintext highlighter-rouge">index.md</code>.</p>
+
+      </div>
+    </main>
+  </body>
+</html>
