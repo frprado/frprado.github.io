@@ -161,11 +161,13 @@ Reddit scraper + NLP pipeline + interactive dashboard for analysing r/Scams post
 <hr> -->
 
 <div class="item-header">
-  <h3><a href="https://github.com/frprado/lingdash">LingDash</a></h3>
+  <h3><a href="https://huggingface.co/spaces/ycalx/lingdash">LingDash</a></h3>
 </div>
 <div class="stack">[<i class="fab fa-python"></i> Python, Dash, Plotly, OpenAlex API]</div>
 
-Tabbed analytics dashboard for exploring linguistics publications using OpenAlex data. Visualises publication trends, topic distribution, journal and country breakdowns, and language share over time using 100%-normalised stacked area charts. Includes a filterable papers table.
+End-to-end bibliometric study of linguistics research (1960–2024), built on ~250M scholarly works indexed by OpenAlex. 
+
+The pipeline fetches and deduplicates peer-reviewed articles across five linguistics topic clusters, applies a journal quality filter (DOAJ membership, OpenAlex core status, or h-index ≥ 15) to remove predatory venues, and enriches each paper with country attribution, detected language mentions (regex over a ~7 700-name ISO 639 reference list), genetic language family (hardcoded table + Wikidata SPARQL fallback), and zero-shot subfield classification via sentence-transformer embeddings. 
 
 </div>
 
