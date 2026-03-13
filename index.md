@@ -71,7 +71,7 @@ I am a Data Scientist specializing on NLP and experimentation, with a foundation
 
 My main areas of expertise are creating text classification solutions, ML pipeline development and end-to-end experimental deployment (A/B tests, eye-tracking controlled trials, survey-based randomized trials).
 
-Previously, I was a graduate student researcher at McMaster University specialized in theoretical linguistics. My academic work falls within the field of Generative Syntax and is focused on the syntactic properties of Brazilian Portuguese. You can find my academic work here.
+Previously, I was a graduate student researcher at McMaster University specialized in theoretical linguistics. My academic work falls within the field of Generative Syntax and is focused on the syntactic properties of Brazilian Portuguese.
 
 ### Technical Skills
 * **Programming & Automation**
