@@ -24,7 +24,8 @@ title: Frederico Prado
   .tab-content { display: none; }
   .tab-content.active { display: block; }
   
-  .item-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5em; }
+  .item-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5em; gap: 1.5em; }
+  .item-header span { flex-shrink: 0; }
   .item-header h3 { margin-bottom: 0; }
   .stack { font-family: monospace; font-size: 0.9em; margin-bottom: 1em; opacity: 0.8; }
   
@@ -79,7 +80,7 @@ Previously, I was a graduate student researcher at McMaster University specializ
   * <i class="fab fa-r-project"></i> **R:** tidyverse, lmer4, ggplot2, shiny
   * <i class="fab fa-git-alt"></i> **Git:** version control and CI/CD
 * **AI & NLP**
-  * <i class="fas fa-robot"></i> LabelBox, LangChain, transformers, spaCy, HuggingFace, Amazon Bedrock
+  * <i class="fas fa-robot"></i> LangChain, transformers, spaCy, HuggingFace, Amazon Bedrock
 * **Cloud Infrastructure**
   * <i class="fab fa-aws"></i> **AWS:** S3, Lambda, Glue, Athena, Sagemaker AI
 * **Data & BI**
