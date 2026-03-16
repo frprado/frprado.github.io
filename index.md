@@ -186,7 +186,7 @@ My PhD dissertation on hyper-raising. Proposes a novel analysis of hyper-raising
   <h3><u>Movement across finite clause boundaries: Hyper Raising in Brazilian Portuguese</u></h3>
   <span>2022</span>
 </div>
-*Canadian Linguistic Association Annual Meeting*. [[Abstract](/pdf/PradoAssessing2021.pdf)] [[Slides](/pdf/apresentacao%20cla2.pdf)]<br><br>
+*Canadian Linguistic Association Annual Meeting*. [[Slides](/pdf/apresentacao%20cla2.pdf)]<br><br>
 Abstract. Talk given at the 2022 Canadian Linguistic Association annual conference.
 
 <hr>
@@ -206,6 +206,17 @@ Handout. Talk given at the 2022 MOTH conference.
 </div>
 *MOTH Syntax Conference*. [[Handout](/pdf/prado_handout_moth2021.pdf)]<br><br>
 Handout. Talk given at the 2021 MOTH conference.
+
+<hr>
+
+<hr>
+
+<div class="item-header">
+  <h3><u>Case study: assessing grammaticality judgement data
+on matrix questions in Brazilian Portuguese</u></h3>
+  <span>2021</span>
+</div>
+*Manuscript*. Experimental study on Brazilian Portuguese null subjects. Randomized trials deployed online via the PCIbex platform with 600+ participants. Results modelled via Linear Mixed-Effect Models. [[PDF]](/pdf/PradoAssessing2021.pdf)
 
 <hr>
 
