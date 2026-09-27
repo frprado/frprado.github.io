@@ -68,7 +68,7 @@ title: Frederico Prado
 
 <div id="about" class="tab-content active" markdown="1">
 
-I am a Data Scientist specializing on NLP and experimentation, with a foundational background in cognitive science and linguistic research (MSc, PhD). I am focused on dynamically applying research methodology to the end-to-end development of data products and machine learning solutions.
+I am a Data Scientist specializing in NLP and experimentation, with a foundational background in cognitive science and linguistic research (MSc, PhD). I am focused on dynamically applying research methodology to the end-to-end development of data products and machine learning solutions.
 
 My main areas of expertise are creating text classification solutions, ML pipeline development and end-to-end experimental deployment (A/B tests, eye-tracking controlled trials, survey-based randomized trials).
 
@@ -76,11 +76,11 @@ Previously, I was a graduate student researcher at McMaster University specializ
 
 ### Technical Skills
 * **Programming & Automation**
-  * <i class="fab fa-python"></i> **Python:** pandas, sklearn, numpy, seaborn, transformers, pytorch, selenium
-  * <i class="fab fa-r-project"></i> **R:** tidyverse, lmer4, ggplot2, shiny
+  * <i class="fab fa-python"></i> **Python:** pandas, sklearn, numpy, seaborn, transformers, pytorch, xgboost, pymc, selenium
+  * <i class="fab fa-r-project"></i> **R:** tidyverse, lme4, ggplot2, shiny
   * <i class="fab fa-git-alt"></i> **Git:** version control and CI/CD
 * **AI & NLP**
-  * <i class="fas fa-robot"></i> LangChain, transformers, spaCy, HuggingFace, Amazon Bedrock
+  * <i class="fas fa-robot"></i> LangChain, LangGraph, transformers, spaCy, HuggingFace, Gemini API, Amazon Bedrock, Bedrock AgentCore
 * **Cloud Infrastructure**
   * <i class="fab fa-aws"></i> **AWS:** S3, Lambda, Glue, Athena, Sagemaker AI
 * **Data & BI**
@@ -106,23 +106,23 @@ Previously, I was a graduate student researcher at McMaster University specializ
   <h3>Mindgruve | Data Scientist</h3>
   <span>2026 - Present</span>
 </div>
-<div class="stack">[<i class="fab fa-aws"></i> AWS, <i class="fab fa-python"></i> Python]</div>
-* Developing Marketing Mix Models (MMM) to optimize budget allocation across multiple marketing channels and project ROI.
-* Implementing end-to-end ML pipelines within AWS infrastructure, from raw data ingestion (Lambda, Glue, Athena) to model deployment (SageMaker).
-* Writing documentation on legacy codebases to improve MLOps workflows.
+<div class="stack">[<i class="fab fa-python"></i> Python, PyMC, Gemini API, <i class="fas fa-robot"></i> LangGraph, <i class="fab fa-aws"></i> AWS]</div>
+* Built an end-to-end video creative intelligence pipeline: Gemini API feature extraction (~100 creative attributes per ad), bootstrapped elastic net for feature selection, and hierarchical Bayesian models (PyMC) predicting engagement metrics and projected revenue as a function of creative traits (video length, word density, CTA presence and timestamps, product presence and duration, etc.).
+* Acted as both lead project manager and key technical point of contact with Google stakeholders for this project. Presented modeling results to the internal Google team, securing $400,000+ in co-development investment for the project.
+* Led a co-development partnership with Amazon to build AMC (Amazon Marketing Cloud) custom audience scoring models leveraging Amazon Ads signals, vendor data, and third-party demographic data.
+* Built and optimized LangGraph/AgentCore agents: reasoning-loop design, retrieval, and graph-level latency optimization, plus monitoring and benchmarking infrastructure covering consistency testing, per-node latency, and token usage. Enabled a ~60% cost reduction by quickly identifying problematic agent nodes.
 
 <hr>
 
 <div class="item-header">
-  <h3>State Health Dept. | Data Scientist (Contract)</h3>
+  <h3>State Health Dept., Center for Epidemiological Monitoring (CVE) | Data Scientist (Contract)</h3>
   <span>2025</span>
 </div>
-<div class="stack">[<i class="fab fa-python"></i> Python, <i class="fab fa-r-project"></i> R <i class="fas fa-database"></i> SQL]</div>
-* Analyzed large-scale epidemiological datasets on respiratory illnesses; tasks went from data cleaning and wrangling to advanced machine learning model development and deployment.
-* Conducted observational studies on vaccine effectiveness, employing logistic regression and propensity score matching to estimate effects on mortality, ICU admission, and illness severity.
-* Developed and deployed an XGBoost text classifier to process 400,000+ clinical notes, identifying unreported patient deaths with high efficiency.
-* Designed and deployed ETL pipelines to extract large medical exam datasets from legacy government databases leveraging Selenium + local transformer models for task automation.
-* Built real-time monitoring dashboards to facilitate and automate monitoring workflows for critical respiratory illnesses in the state of São Paulo.
+<div class="stack">[<i class="fab fa-python"></i> Python, <i class="fab fa-r-project"></i> R, <i class="fas fa-database"></i> SQL]</div>
+* Estimated vaccine effectiveness against mortality, ICU admission, and illness severity using logistic regression and propensity score matching on large-scale epidemiological datasets.
+* Deployed real-time surveillance dashboards for respiratory illness monitoring across São Paulo state, including the state's first automated pipeline for large-scale measles case monitoring, substantially increasing case-reporting efficiency across municipalities.
+* Built and deployed an XGBoost text classifier processing 400,000+ clinical notes to surface unreported patient deaths.
+* Built ETL pipelines extracting medical exam data from legacy government databases using Selenium and local transformer models.
 
 <hr>
 
@@ -168,7 +168,7 @@ Reddit scraper + NLP pipeline + interactive dashboard for analysing r/Scams post
 
 End-to-end bibliometric study of linguistics research (1960–2024), built on ~250M scholarly works indexed by OpenAlex. 
 
-The pipeline fetches and deduplicates peer-reviewed articles across five linguistics topic clusters, applies a journal quality filter (DOAJ membership, OpenAlex core status, or h-index ≥ 15) to remove predatory venues, and enriches each paper with country attribution, detected language mentions (regex over a ~7 700-name ISO 639 reference list), genetic language family (hardcoded table + Wikidata SPARQL fallback), and zero-shot subfield classification via sentence-transformer embeddings. 
+The pipeline fetches and deduplicates peer-reviewed articles across five linguistics topic clusters, applies a journal quality filter (DOAJ membership, OpenAlex core status, or h-index ≥ 15) to remove predatory venues, and enriches each paper with country attribution, detected language mentions (regex over a ~7,700-name ISO 639 reference list), genetic language family (hardcoded table + Wikidata SPARQL fallback), and zero-shot subfield classification via sentence-transformer embeddings. 
 
 </div>
 
@@ -210,14 +210,12 @@ Handout. Talk given at the 2021 MOTH conference.
 
 <hr>
 
-<hr>
-
 <div class="item-header">
-  <h3><u>Case study: assessing grammaticality judgement data
-on matrix questions in Brazilian Portuguese</u></h3>
+  <h3><u>Case study: assessing grammaticality judgement data on matrix questions in Brazilian Portuguese</u></h3>
   <span>2021</span>
 </div>
-*Manuscript*. Experimental study on Brazilian Portuguese null subjects. Randomized trials deployed online via the PCIbex platform with 600+ participants. Results modelled via Linear Mixed-Effect Models. [[PDF]](/pdf/PradoAssessing2021.pdf)
+*Manuscript*. [[PDF](/pdf/PradoAssessing2021.pdf)]<br><br>
+Experimental study on Brazilian Portuguese null subjects. Randomized trials deployed online via the PCIbex platform with 600+ participants. Results modelled via Linear Mixed-Effect Models.
 
 <hr>
 
@@ -244,7 +242,7 @@ Abstract. Poster presented at the 2019 Canadian Linguistic Association annual co
   <span>2019</span>
 </div>
 *XXV Congresso de Iniciação Científica da UNICAMP*. [[Poster](/pdf/piraha.pdf)]<br><br>
-Poster presented at the yearly Universidade Estadual de Campinas' Undergraduate Disseration Confernece
+Poster presented at the yearly Universidade Estadual de Campinas' Undergraduate Dissertation Conference.
 
 </div>
 
