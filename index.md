@@ -107,10 +107,10 @@ Previously, I was a graduate student researcher at McMaster University specializ
   <span>2026 - Present</span>
 </div>
 <div class="stack">[<i class="fab fa-python"></i> Python, PyMC, Gemini API, <i class="fas fa-robot"></i> LangGraph, <i class="fab fa-aws"></i> AWS]</div>
-* Built an end-to-end video creative intelligence pipeline: Gemini API feature extraction (~100 creative attributes per ad), bootstrapped elastic net for feature selection, and hierarchical Bayesian models (PyMC) predicting engagement metrics and projected revenue as a function of creative traits (video length, word density, CTA presence and timestamps, product presence and duration, etc.).
-* Acted as both lead project manager and key technical point of contact with Google stakeholders for this project. Presented modeling results to the internal Google team, securing $400,000+ in co-development investment for the project.
-* Led a co-development partnership with Amazon to build AMC (Amazon Marketing Cloud) custom audience scoring models leveraging Amazon Ads signals, vendor data, and third-party demographic data.
-* Built and optimized LangGraph/AgentCore agents: reasoning-loop design, retrieval, and graph-level latency optimization, plus monitoring and benchmarking infrastructure covering consistency testing, per-node latency, and token usage. Enabled a ~60% cost reduction by quickly identifying problematic agent nodes.
+* Built an end-to-end video creative intelligence pipeline: LLM-based feature extraction of creative attributes from video ads, bootstrapped elastic net for feature selection, and hierarchical Bayesian models (PyMC) predicting engagement and revenue as a function of creative traits.
+* Led the project end to end as project manager and technical point of contact with partner stakeholders, presenting modeling results that secured co-development investment.
+* Led a co-development partnership to build custom audience scoring models from ad-platform signals and third-party data.
+* Built and optimized LangGraph/AgentCore agents (reasoning-loop design, retrieval, latency optimization), plus monitoring and benchmarking infrastructure for consistency, per-node latency, and token usage, significantly reducing operating costs.
 
 <hr>
 
